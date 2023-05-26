@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nascime Lorrenzo</title>
+    <link rel="stylesheet" href="styleIndex.css">
+</head>
+<body>
+    <div class="message-box hide">
+        <h2 class="message-text">VOCÊ ESTÁ PRESTES A PARTICIPAR DO MAIS ASSERTIVO GRUPO DE SINAIS DO BRASIL</h2>
+        <span id="btn-entrar" class="btn-entrar">ENTRAR AGORA</span>
+    </div>
+
+    <section class="section" style="display: flex; flex-direction: row; justify-content: flex-start;">
+        <div class="container">
+            <div class="container-text">
+                <h1 class="title">SINAIS GRÁTIS</h1>
+                <p class="sub-title">A melhor sessão de operações diária, totalmente gratuita.</p>
+                <span id="btn-message-box" class="btn-entrar">ENTRAR AGORA</span>
+            </div>
+        </div>
+        <img class="back" src="https://static.wixstatic.com/media/c837a6_831fe7c79e9e45869554588550034ac1~mv2.jpg/v1/fill/w_980,h_1081,al_b,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_831fe7c79e9e45869554588550034ac1~mv2.jpg" alt="print-telegram">
+        <img class="back-print" src="https://static.wixstatic.com/media/5ea72d_2147abf3504c48edae177c775307a286~mv2.png/v1/crop/x_0,y_779,w_1290,h_2017/fill/w_415,h_649,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/6x0_PNG.png" alt="">
+    </section>
+    <section class="section-horizontal">
+        <div class="container-center">
+            <div class="container-info">
+                <div class="celular">
+                    <img class="circle" src="src/CELULAR.webp" alt="">
+                    <p class="sub">VOCÊ PRECISA APENAS DO CELULAR</p>
+                </div>
+                <h1 class="title">TODOS OS SINAIS SÃO ENVIADOS EM UM APLICATIVO DE CELULAR.</h1>
+                <p class="sub-title">Utilizamos o celular como nosso melhor aliado para as 
+                    operações. Com ele podemos participar da sessão e ao 
+                    mesmo tempo concluir a nossa operação.</p>
+            </div>
+        </div>
+        <div class="container-center">
+            <img class="telegram-image" src="src/telegram.png" alt="">
+        </div>
+        <img class="back" src="https://static.wixstatic.com/media/c837a6_717fda30f359459d82adc64dc73600d2~mv2.png/v1/fill/w_980,h_888,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/c837a6_717fda30f359459d82adc64dc73600d2~mv2.png" alt="">
+    </section>
+    <section class="section-feedbacks">
+        <h1 class="feedback-title">FEEDBACKS DOS SINAIS GRATUITOS</h1>
+        <div class="container-feedbacks">
+            <img class="feedback" src="src/feedbacks/01.jpeg" alt="">
+            <img class="feedback" src="src/feedbacks/02.jpeg" alt="">
+            <img class="feedback" src="src/feedbacks/03.jpeg" alt="">
+            <img class="feedback" src="src/feedbacks/04.jpeg" alt="">
+            <img class="feedback" src="src/feedbacks/05.jpeg" alt="">
+        </div>
+    </section>
+
+    <script>
+        const btnEntrar = document.getElementById('btn-entrar');
+        btnEntrar.addEventListener('click', (e) => {
+            window.location.href = "entrarGrupo.html";
+        })
+        const btnMessageBox = document.getElementById('btn-message-box');
+        btnMessageBox.addEventListener('click', (e) => {
+            btnEntrar.parentElement.classList.remove('hide');
+            btnEntrar.parentElement.classList.add('show');
+        });
+    </script>
+</body>
+</html>

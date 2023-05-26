@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow-x: hidden;
+    font-family: Arial,Helvetica,sans-serif;
+    color: white;
+}
+
+.section {
+    position: relative;
+    width: 100vw;
+    height: 120vh;
+}
+
+.back, .back-print {
+    position: absolute;
+}
+
+.back{
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.back-print {
+    height: 75%;
+    right: 15%;
+    top: 0;
+    transform: rotate(-15deg) translateX(15px) translateY(10%);
+    z-index: -1;
+    border-radius: 15px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.container-text {
+    margin-left: 60px;
+    transform: translateY(-60px);
+}
+
+.container-text .title {
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.container-text .sub-title {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.btn-entrar {
+    background-color: #a238ff;
+    cursor: pointer!important;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: max-content;
+    touch-action: manipulation;
+}
+
+.btn-entrar {
+    border-radius: 50px;
+    box-shadow: 0.00px 1.00px 20px 0px rgba(125,43,196,1);
+    transition: border-color .4s ease 0s,background-color .4s ease 0s;
+    text-decoration: none;
+    width: 165px;
+    height: 46px;
+}
+
+.btn-entrar:hover {
+    background-color: white;
+    color: black;
+}
+
+.section-horizontal {
+    position: relative;
+    width: 100vw;
+    height: 120vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.container-center {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-info .celular {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.container-info .celular .circle {
+    border-radius: 35px;
+    margin-right: 20px;
+}
+
+.container-info .celular .sub {
+    font-size: 15px;
+    letter-spacing: 0.3em;
+    font: normal normal normal 14px/1.4em questrial,sans-serif;
+}
+
+.telegram-image {
+    width: 50%;
+    transform: translateX(-3em) translateY(-15px);
+}
+
+.container-info > .title {
+    font: normal normal bold 50px/1.4em poppins-extralight,poppins,sans-serif;
+    color: rgb(255,255,255);
+    line-height: 1.2em;
+    font-size: 50px;
+    font-weight: 300;
+    margin: 30px 0;
+}
+
+.container-info > .sub-title {
+    font: normal normal normal 18px/1.4em questrial,sans-serif;
+    font-weight: 500;
+    line-height: 1.6em;
+}
+
+.section-feedbacks {
+    width: 100%;
+    height: calc(432px*2+14vh);
+    background-color: #222323;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.feedback-title {
+    font-family: helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+    font: normal normal bold 50px/1.4em poppins-extralight,poppins,sans-serif;
+    font-size: 30px;
+    line-height: normal;
+    letter-spacing: 0em;
+    color: white;
+    margin: 10px 0;
+}
+
+.container-feedbacks {
+    height: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container-feedbacks img {
+    height: 432px;
+    width: 280px;
+    margin: 15px;
+}
+
+.message-box {
+    position: fixed;
+    z-index: 12;
+    background-color: #222323;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.message-text {
+    width: 60%;
+    font: normal normal bold 50px/1.4em poppins-extralight,poppins,sans-serif;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#btn-entrar {
+    width: 15em;
+    height: 4em;
+}
+
+.hide {
+    transition: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.show {
+    transition: 500ms;
+    opacity: 1;
+    pointer-events: auto;
+}
