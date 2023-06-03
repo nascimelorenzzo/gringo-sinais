@@ -114,3 +114,55 @@ body {
 .btn:hover a {
   color: black;
 }
+
+@media only screen and (max-width: 768px) {
+
+  .regras .horizontal {
+    flex-direction: column;
+  }
+
+  .regra {
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .first {
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+  }
+
+  .passos {
+    flex-direction: row;
+    margin-top: 50px;
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  .passos .vertical {
+    width: 50%;
+    height: 70%;
+    margin-bottom: 20px;
+  }
+
+  .passos .vertical img {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 10px;
+  }
+
+  .passos .vertical .title {
+    font-size: 10px;
+  }
+
+  .btn {
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+  }
+}

@@ -225,3 +225,83 @@ body, html {
     opacity: 1;
     pointer-events: auto;
 }
+
+@media only screen and (max-width: 768px) {
+    .section {
+        height: 180vh;
+    }
+
+    .back-print {
+        display: none;
+    }
+    
+    .container-text {
+        margin-left: 30px;
+    }
+
+    .container-text .title {
+        font-size: 40px;
+    }
+
+    .container-text .sub-title {
+        font-size: 20px;
+    }
+
+    .section-horizontal {
+        flex-direction: column;
+        height: fit-content;
+        padding: 15px;
+    }
+
+    .container-center {
+        width: 100%;
+        margin: 0;
+        height: fit-content;
+    }
+
+    .telegram-image {
+        height: 50%;
+        transform: none;
+    }
+
+    .container-info > .title {
+        font-size: 40px;
+    }
+
+    .container-info > .sub-title {
+        font-size: 16px;
+    }
+
+    .section-feedbacks {
+        height: auto;
+        padding: 3em 0;
+    }
+
+    .container-feedbacks {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container-feedbacks img {
+        height: auto;
+        margin: 15px auto;
+    }
+
+    .message-text {
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    #btn-entrar {
+        width: 10em;
+        height: 3em;
+    }
+
+    .section {
+        height: 80vh;
+    }
+
+    .container-feedbacks img {
+        width: 80%;
+    }
+}
